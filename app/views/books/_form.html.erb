@@ -1,0 +1,45 @@
+<%= form_with model: @book do |form| %>
+    <div>
+        <%= form.label :title %><br>
+        <%= form.text_field :title %>
+        <% @book.errors.full_messages_for(:title).each do |message| %>
+            <div><%= message %></div>
+        <% end %>
+    </div>
+    <br>
+    <div>
+        <%= form.label :author %><br>
+        <%= form.text_area :author %>
+        <% @book.errors.full_messages_for(:author).each do |message| %>
+            <div><%= message %></div>
+        <% end %>
+    </div>
+    <br>
+    <div>
+        <%= form.label :genre %><br>
+        <%= form.text_area :genre %>
+        <% @book.errors.full_messages_for(:genre).each do |message| %>
+            <div><%= message %></div>
+        <% end %>
+    </div>
+    <br>
+    <div>
+        <%= form.label :price %><br>
+        <%= form.text_area :price %>
+        <% @book.errors.full_messages_for(:price).each do |message| %>
+            <div><%= message %></div>
+        <% end %>
+    </div>
+    <br>
+    <div>
+        <%= form.label :published_date %><br>
+        <%= form.text_area :published_date %>
+        <% @book.errors.full_messages_for(:published_date).each do |message| %>
+            <div><%= message %></div>
+        <% end %>
+    </div>
+    <br>
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>

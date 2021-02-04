@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'articles#index'
+  root 'books#index'
 
-  resources :articles
+  resources :books
 end
