@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_03_202932) do
+ActiveRecord::Schema.define(version: 2021_02_04_224301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2021_02_03_202932) do
     t.string "author"
     t.string "genre"
     t.float "price"
-    t.datetime "published_date"
+    t.date "published_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

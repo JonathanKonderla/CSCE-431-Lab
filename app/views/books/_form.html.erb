@@ -37,7 +37,7 @@
     <br>
     <div>
         <%= form.label :published_date %><br>
-        <%= form.text_area :published_date %>
+        <%= form.date_select :published_date %>
         <% @book.errors.full_messages_for(:published_date).each do |message| %>
             <div><%= message %></div>
         <% end %>
@@ -47,3 +47,5 @@
         <%= form.submit %>
     </div>
 <% end %>
+<br>
+<%= link_to "Home", root_path %>

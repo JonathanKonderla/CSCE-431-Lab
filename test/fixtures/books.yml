@@ -5,11 +5,11 @@ one:
   author: MyString
   genre: MyString
   price: 1.5
-  published_date: 2021-02-03 14:29:32
+  published_date: 2021-02-04
 
 two:
   title: MyString
   author: MyString
   genre: MyString
   price: 1.5
-  published_date: 2021-02-03 14:29:32
+  published_date: 2021-02-04
